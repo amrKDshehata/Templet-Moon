@@ -1,0 +1,371 @@
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .about-us
+  {
+    justify-content: center;
+  }
+  .about-us .contact
+  {
+    display: none;
+  }
+  .bg-light
+  {
+    background-color: #4bc714!important;
+    top: 140%;
+    left: 5%;
+    width: 90%;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    color: white;
+    background-color: #052501d4;
+  }
+  .btn:not(:disabled):not(.disabled):hover
+  {
+    background-color: black;
+  }
+  .navbar-light .navbar-nav .active>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link.active:hover, 
+  .navbar-light .navbar-nav .nav-link.show:hover, 
+  .navbar-light .navbar-nav .show>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #052501d4;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .bg-light::before
+  {
+    display: none;
+  }
+  .fa-list-ul:before
+  {
+    top: -23px;
+    right: 14px;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev
+  {
+    display: none;
+  }
+  section .container
+  {
+    column-gap: 0px;
+  }
+  section .container .about-moon
+  {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .pic-about-moon img {
+    width: 100%;
+  }
+  .offer-box .container .row
+  {
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row-cols-3>*
+  {
+    max-width: 100%;
+  }
+  .offer-box .container .col:nth-child(3) 
+  {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  .offer-box .container .col:nth-child(2) 
+  {
+    margin-top: 0px;
+  }
+  .offer-box .container .col:nth-child(4) 
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .offer-box .container .col p
+  {
+    margin-bottom: 0;
+  }
+  .offer-box .container .col:nth-child(1) a,
+  .offer-box .container .col:nth-child(2) a
+  {
+    display: none;
+  }
+  .moon-products .container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .fresh-apple figure h3, 
+  .fresh-aalu figure h3, 
+  .vegetables figure h3, 
+  .field-wheat figure h3, 
+  .rice-field figure h3
+  {
+    padding-top: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  footer .container
+  {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container .row .col-sm div 
+  {
+    justify-content: center;
+  }
+  .offer-box .container .col:nth-child(4),
+  .offer-box .container .col:nth-child(4) a
+  {
+    display: inline-block;
+    text-align: center;
+  }
+  .profile .carousel-item-next i, 
+  .profile .carousel-item-prev i, 
+  .profile .carousel-item.active i
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile .carousel-item-next i .before, 
+  .profile .carousel-item-prev i .before, 
+  .profile .carousel-item.active i .before
+  {
+    border: none;
+  }
+  .profile .slide
+  {
+    text-align: center;
+  }
+  .profile .slide h3
+  {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .profile .carousel-item-next p, 
+  .profile .carousel-item-prev p, 
+  .profile .carousel-item.active p
+  {
+    padding: 10px;
+  }
+  .profile .carousel-item .buttom, 
+  .profile .carousel-item .buttom, 
+  .profile .carousel-item .buttom 
+  {
+    display: none;
+  }
+  .profile
+  {
+    height: 600px;
+  } 
+  #www {
+    padding: 0px;
+  }
+  .profile .carousel-item-next, 
+  .profile .carousel-item-prev, 
+  .profile .carousel-item.active {
+    display: block;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+  header .container
+  {
+    max-width: 100%;
+  }
+  .bg-light
+  {
+    background-color: #4bc714!important;
+    top: 140%;
+    left: 5%;
+    width: 90%;
+  }
+  .navbar-light .navbar-nav .active>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link.active:hover, 
+  .navbar-light .navbar-nav .nav-link.show:hover, 
+  .navbar-light .navbar-nav .show>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link:hover 
+  {
+    color: white;
+    background-color: #052501d4;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .fa-list-ul:before
+  {
+    top: -23px;
+    right: 14px;
+  }
+  .bg-light::before
+  {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  .carousel-control-prev
+  {
+    display: none;
+  }
+  section .container
+  {
+    column-gap: 0px;
+  }
+  section .container .about-moon
+  {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .pic-about-moon img {
+    width: 100%;
+  }
+  .offer-box .container .col:nth-child(1) p
+  {
+    margin-bottom: 0;
+  }
+  .offer-box .container .col:nth-child(1) 
+  {
+    margin-bottom: 0;
+  }
+  .row-cols-3>*
+  {
+    max-width: 100%;
+  }
+  .offer-box .container .row
+  {
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offer-box .container .col
+  {
+    width: 50%;
+  }
+  .offer-box .container .col:nth-child(4) a,
+  .offer-box .container .col:nth-child(1) a
+  {
+    display: none;
+  }
+  .offer-box .container .col:nth-child(2) div
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .row-cols-3>* {
+    flex: 0 0 48.333333%;
+    max-width: 100%;
+  }
+  .offer-box .container .col:nth-child(1) p,
+  .offer-box .container .col:nth-child(2) p
+  {
+    margin-bottom: 20px;
+  }
+  .offer-box .container .col:nth-child(1),
+  .offer-box .container .col:nth-child(2),
+  .offer-box .container .col:nth-child(3)
+  {
+    margin: 20px 0 0 0;
+  }
+  .offer-box .container .col:nth-child(2) a
+  {
+    display: inline-block;
+    text-align: center;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+@media  (min-width: 767.98px) and (max-width: 991.98px) { 
+  .bg-light
+  {
+    background-color: #4bc714!important;
+    top: 140%;
+    left: 5%;
+    width: 90%;
+  }
+  .navbar-light .navbar-nav .active>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link.active:hover, 
+  .navbar-light .navbar-nav .nav-link.show:hover, 
+  .navbar-light .navbar-nav .show>.nav-link:hover, 
+  .navbar-light .navbar-nav .nav-link:hover 
+  {
+    color: white;
+    background-color: #052501d4;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  .bg-light::before
+  {
+    display: none;
+  }
+  .fa-list-ul:before
+  {
+    top: -23px;
+    right: 14px;
+  }
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+  .carousel-caption h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .carousel-indicators
+  {
+    display: none;
+  }
+  section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .pic-about-moon {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pic-about-moon img
+  {
+    width: 100%;
+  }
+  section .container .about-moon h3 {
+    font-size: 34px;
+  }
+  .offer-box .container .col:nth-child(2) a,
+  .offer-box .container .col:nth-child(4) a
+  {
+    display: none;
+  }
+  .offer-box .container .col:nth-child(1),
+  .offer-box .container .col:nth-child(2),
+  .offer-box .container .col:nth-child(3)
+  {
+    margin-bottom: 0;
+  }
+  .offer-box .container .col:nth-child(4)
+  {
+    display: none;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1199px) { 
+  .pic-about-moon {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pic-about-moon img{
+    width: 100%;
+  }
+}

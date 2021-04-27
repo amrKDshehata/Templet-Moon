@@ -1,0 +1,592 @@
+:root
+{
+  --Primary-color:#052501;
+  --Secondary-color:#4bc714;
+  --third-color:#090501;
+  --Text-color:white;
+}
+*
+{
+  box-sizing: border-box;
+}
+/* ----------------------------------------Header------------------------------- */
+/* Start Header */
+header
+{
+  background-color: var(--Primary-color);
+  padding: 20px 0 50px 0;
+}
+.about-us
+{
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .contact
+{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--Text-color);
+}
+/* End Header */
+/* ----------------------------------------Navbar------------------------------------- */
+/* start navbar */
+.carousel
+{
+  position: relative;
+}
+header .container
+{
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+.bg-light
+{
+  background-color: var(--third-color)!important;
+  position: absolute;
+  top: 119%;
+  left: 3%;
+  z-index: 999;
+  padding-bottom: 21px;
+  width: 100%;
+}
+.bg-light::before
+{
+  content: url(/icon/wfe4.png);
+  position: absolute;
+  top: 0;
+  left: -44px;
+}
+.collapse
+{
+  position: relative;
+  top: 8px;
+}
+.navbar-nav{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar-light .navbar-toggler
+{
+  width: 15px;
+  height: 10px;
+  border: 0;
+}
+.navbar-light .navbar-toggler-icon
+{
+  position: relative;
+  border: none;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height:0!important;
+    vertical-align: middle;
+    content: "";
+    background: 50%/100% 100% no-repeat; 
+}
+.fa-list-ul:before
+{
+  position: absolute;
+  top: -30px;
+  left: -17px;
+  font-size: 35px;
+  color: var(--Text-color);
+}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link
+{
+  color: var(--Text-color);
+}
+.navbar-light .navbar-nav .active>.nav-link:hover, 
+.navbar-light .navbar-nav .nav-link.active:hover, 
+.navbar-light .navbar-nav .nav-link.show:hover, 
+.navbar-light .navbar-nav .show>.nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:hover
+{
+  color: var(--Secondary-color);
+}
+/* End navbar */
+/* ------------------------------------Carousel------------------------------------- */
+/* Start Carousel */
+.carousel-caption {
+  text-align: left;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-44%);
+  bottom: auto;
+}
+.carousel-caption h1
+{
+  font-size: 5rem;
+  font-weight: bold;
+}
+.carousel-caption h3
+{
+  color:var(--Secondary-color); 
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.carousel-caption p
+{
+  margin-bottom: 35px;
+}
+.carousel-caption a
+{
+  text-decoration: none;
+  background-color: var(--Text-color);
+  padding: 10px 40px;
+  color: var(--third-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.carousel-caption a:hover
+{
+  background-color: var(--Primary-color);
+  color: var(--Text-color);
+}
+.carousel-indicators .active
+{
+  background-color:var(--Secondary-color) ;
+  
+}
+.carousel-indicators li
+{
+  background-color:var(--Primary-color) ;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 1;
+}
+/* End Carousel */
+/* -------------------------------------Section---------------------------------- */
+/* Start section */
+section .container 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding: 80px 0px;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+section .container .about-moon
+{
+  grid-column: span 2;
+}
+section .container .about-moon h1
+{
+  font-size: 38px;
+  color:var(--Primary-color);
+}
+section .container .about-moon h3
+{
+  font-size: 43px;
+  color: var(--Secondary-color);
+  border-bottom: 3px solid var(--Primary-color);
+}
+section .container .about-moon p
+{
+  line-height: 1.8;
+}
+section .container .about-moon a
+{
+  color: var(--Text-color);
+  background-color: var(--Primary-color);
+  padding: 10px 50px;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+section .container .about-moon a:hover
+{
+  background-color: var(--Secondary-color);
+  text-decoration: none;
+}
+.pic-about-moon
+{
+  grid-column: span 3;
+  width: 100%;
+}
+.pic-about-moon img {
+  width: 100%;
+}
+/* End section */
+/* -----------------------------------Status------------------------------------ */
+/* Start status */
+.status
+{
+  background-color: var(--Primary-color);
+  padding: 30px 0px;
+}
+.status .container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  justify-content: space-around;
+  color: var(--Text-color);
+}
+.status .container .harvesta,
+.status .container .units-of-cattle,
+.status .container .farm,
+.status .container .units-of-technic
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.status .container .harvesta img,
+.status .container .units-of-cattle img,
+.status .container .farm img,
+.status .container .units-of-technic img
+{
+  margin-bottom: 5px;
+}
+.status .container .harvesta span,
+.status .container .units-of-cattle span,
+.status .container .farm span,
+.status .container .units-of-technic span
+{
+  font-size: 30px;
+  color: var(--Secondary-color);
+  font-weight: bold;
+}
+.status .container .harvesta p,
+.status .container .units-of-cattle p,
+.status .container .farm p,
+.status .container .units-of-technic p
+{
+  font-size: 24px;
+}
+/* End status */
+/* --------------------------------------title------------------------------------- */
+/* start titel */
+.titel,
+.tite
+{
+  padding: 60px 0px;
+}
+.titel .container,
+.tite .container
+{
+  text-align: center;
+}
+.titel .container h2,
+.tite .container h2
+{
+  border-bottom: 3px solid var(--Primary-color);
+  display: inline-block;
+  font-size: 50px;
+  max-width: 375px;
+}
+.titel .container strong,
+.tite .container strong
+
+{
+  color: var(--Secondary-color);
+}
+/* End titel */
+/* ---------------------------------offer-box------------------------------------ */
+/* Start offer-box */
+.offer-box
+{
+  background-color: var(--Primary-color);
+}
+.offer-box .container
+{
+  color: var(--Text-color);
+}
+.offer-box .container .col
+{
+  margin: 60px 0px 70px 0px;
+  line-height: 1.8;
+}
+.offer-box .container .col figure img
+{
+  width: 100%;
+}
+.offer-box .container .col:nth-child(2) a,
+.offer-box .container .col:nth-child(4) a
+{
+  display: none;
+}
+.offer-box .container .col:nth-child(4) 
+{
+  display: none;
+}
+.offer-box .container .col h2
+{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.offer-box .container .col p
+{
+  margin-bottom: 80px;
+  text-align: center;
+}
+.offer-box .container .col a{
+  background-color: var(--Text-color);
+  color: var(--Primary-color);
+  padding: 10px 50px;
+  transition: 0.5s;
+  text-decoration: none;
+  text-align: right;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.offer-box .container .col a:hover
+{
+  background-color: var(--Secondary-color);
+  text-decoration: none;
+}
+.offer-box .container .col:nth-child(2)
+{
+  margin-top: 140px;
+}
+.offer-box .container .col:nth-child(3)
+{
+  margin-top: 220px;
+}
+/* End offer-box */
+/* ---------------------------------Products------------------------------------ */
+/* Start Products */
+.moon-products .container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill ,minmax(300px , 1fr));
+  gap: 40px 40px;
+}
+.fresh-apple,
+.fresh-aalu,
+.vegetables,
+.field-wheat,
+.rice-field
+{
+  grid-column: span 1;
+  width: 100%;
+  height: 100%;
+}
+.fresh-apple figure,
+.fresh-aalu figure,
+.vegetables figure,
+.field-wheat figure,
+.rice-field figure
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.fresh-apple figure img,
+.fresh-aalu figure img,
+.vegetables figure img,
+.field-wheat figure img,
+.rice-field figure img
+{
+  width: 100%;
+  height: 100%;
+}
+.rice-field
+{
+  grid-column: span 2;
+}
+.fresh-apple figure h3,
+.fresh-aalu figure h3,
+.vegetables figure h3,
+.field-wheat figure h3,
+.rice-field figure h3
+{
+  position: absolute;
+  bottom: -8px;
+  background-color: var(--Primary-color);
+  width: 100%;
+  text-align: center;
+  color: var(--Text-color);
+}
+/* End Products */
+.tite .container h2
+{
+  padding: 0px;
+}
+/* ---------------------------------Last-carousel------------------------------------ */
+/* Start Last Carousel */
+.profile
+{
+  height: 400px;
+}
+.profile .carousel
+{
+  height: 100%;
+}
+.profile .carousel .container
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  flex-direction: column;
+}
+.profile .carousel-item-next, 
+.profile .carousel-item-prev, 
+.profile .carousel-item.active {
+  color: var(--Text-color);
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.profile .carousel-item-next p, 
+.profile .carousel-item-prev p, 
+.profile .carousel-item.active p
+{
+  background-color: var(--Primary-color);
+  padding: 40px 20px;
+}
+
+.profile .slide
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile .slide p
+{
+  margin-bottom: 0;
+}
+.profile .slide h3
+{
+  color: var(--third-color);
+  margin: 0 0 20px 30px;
+}
+.profile .slide h3 strong 
+{
+  color: var(--Secondary-color);
+}
+.profile .carousel-item-next>i, 
+.profile .carousel-item-prev>i, 
+.profile .carousel-item.active>i 
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.profile .carousel-item-next i .before, 
+.profile .carousel-item-prev i .before, 
+.profile .carousel-item.active i .before
+{
+  border: 15px solid var(--Secondary-color);
+  position: relative;
+}
+.profile #test
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* End Last Carousel */
+/* ------------------------------form------------------------------- */
+/* Start form */
+.map-field
+{
+  position: relative;
+}
+.map-field .container
+{
+  display: grid;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+} 
+.map-field form
+{
+  background-color: var(--Primary-color);
+  padding: 50px 30px;
+  color: var(--Text-color);
+  margin: 30px 0 0 0;
+  z-index: 999;
+  max-width: 555px;
+}
+.map-field form .btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  background-color: var(--Text-color);
+  color: var(--third-color);
+  font-weight: bold;
+  padding: 15px 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none!important;
+}
+/* End form */
+/* --------------------------------footer----------------------------------------- */
+/* Start Footer */
+footer
+{
+  background-color: var(--Primary-color);
+  color: var(--Text-color);
+  padding: 90px 0;
+}
+footer .container .row .col-sm
+{
+  margin-right: 20px;
+}
+footer .container .row .col-sm i img{
+  margin: 0 0 15px 0 ;
+}
+footer .container .row .col-sm p
+{
+  line-height: 1.8;
+}
+footer .container .row .col-sm h3
+{
+  padding-bottom: 15px;
+  border-bottom:3px solid var(--Secondary-color);
+  margin-bottom: 30px;
+}
+footer .container .row .col-sm div
+{
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+footer .container .row .col-sm div i
+{
+  margin-right: 15px;
+}
+footer .container .row .col-sm input
+{
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* End Footer */
+/* ----------------------------Copy Right-------------------------------------- */
+/* Start Copy right */
+.copy-right
+{
+  background-color:var(--Secondary-color);
+  text-align: center;
+  padding: 15px 0;
+  color: var(--Text-color);
+}
+.copy-right p
+{
+  margin: 0;
+  padding: 0;
+}
+/* End Copy right */
+
